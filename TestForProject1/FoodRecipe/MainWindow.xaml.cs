@@ -24,5 +24,27 @@ namespace FoodRecipe
         {
             InitializeComponent();
         }
+
+        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = ListViewMenu.SelectedIndex;
+            switch (index)
+            {
+                case 0:
+                    GridPrinciple.Children.Clear();
+                    GridPrinciple.Children.Add(new HomeScreen());
+                    break;
+                case 1:
+                    GridPrinciple.Children.Clear();
+                    GridPrinciple.Children.Add(new SearchScreen());
+                    break;
+                case 2:
+                    GridPrinciple.Children.Clear();
+                    GridPrinciple.Children.Add(new LovedScreen());
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

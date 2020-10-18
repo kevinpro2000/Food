@@ -11,13 +11,18 @@
         Name="mainWindow"
         Title="MainWindow" Height="auto" Width="auto">
     <Grid>
-        <Grid Margin="250 5 0 0">
-            <Grid  x:Name="GridPrinciple" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Margin="225 5 0 0">
+            <Grid  x:Name="GridPrinciple"/>
 
         </Grid>
 
         <Grid Width="auto" HorizontalAlignment="Left" Background="#FE222222">
-            <ListView x:Name="ListViewMenu" Margin="0 100" Foreground="LightGray"  FontFamily="Champagne &amp; Limousines" SelectedIndex="0">
+            <ListView x:Name="ListViewMenu" Margin="0 20" Foreground="LightGray"  FontFamily="Champagne &amp; Limousines" SelectedIndex="0" SelectionChanged="ListViewMenu_SelectionChanged">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Margin" Value="0 5 0 10"></Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
                 <ListViewItem Height="60">
                     <Grid>
                         <StackPanel Orientation="Horizontal">

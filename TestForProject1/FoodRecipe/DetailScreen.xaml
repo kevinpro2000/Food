@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="FoodRecipe.DetailScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FoodRecipe"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             Height="auto" Width="auto">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="1200" Height="530" Background="#FFF">
+        <ScrollViewer Margin=" 5">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <WebBrowser HorizontalAlignment="Left" Height="334" Margin="10,10,0,0" VerticalAlignment="Top" Width="405" Source="{Binding VideoDemo}"/>
+                    <TextBlock Margin="10 10 10 10" Text="{Binding Incredient}" TextWrapping="Wrap" Width="auto" Height="auto"></TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Hướng dẫn nấu ăn" FontWeight="Bold" FontSize="20" Margin="10 10"></TextBlock>
+                    <ListView ItemsSource="{Binding ListStepsGuild}" Margin="5">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Bước" DisplayMemberBinding="{Binding ID}"></GridViewColumn>
+                                <GridViewColumn Header="Mô tả" DisplayMemberBinding="{Binding Guild}"></GridViewColumn>
+                                <GridViewColumn Header="Hình ảnh" DisplayMemberBinding="{Binding Image}"></GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+       
+
+    </Grid>
+</UserControl>

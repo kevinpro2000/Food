@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace FoodRecipe.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
-        public MainViewModel()
-        {
-            //MessageBox.Show("a");
-        }
     }
 }
