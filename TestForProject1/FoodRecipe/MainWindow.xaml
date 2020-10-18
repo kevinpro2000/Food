@@ -7,6 +7,8 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         DataContext="{StaticResource MainVM}"
+        WindowStartupLocation="CenterScreen"
+        Name="mainWindow"
         Title="MainWindow" Height="auto" Width="auto">
     <Grid>
         <Grid Margin="250 5 0 0">
@@ -14,7 +16,7 @@
 
         </Grid>
 
-        <Grid Width="250" HorizontalAlignment="Left" Background="#FE222222">
+        <Grid Width="auto" HorizontalAlignment="Left" Background="#FE222222">
             <ListView x:Name="ListViewMenu" Margin="0 100" Foreground="LightGray"  FontFamily="Champagne &amp; Limousines" SelectedIndex="0">
                 <ListViewItem Height="60">
                     <Grid>
@@ -37,6 +39,14 @@
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Heart" Width="30" Height="30" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
                             <TextBlock Text="Liked" FontSize="26" VerticalAlignment="Center" Margin="20 0"></TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="PlusBox" Width="30" Height="30" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                            <TextBlock Text="Add recipe" FontSize="26" VerticalAlignment="Center" Margin="20 0"></TextBlock>
                         </StackPanel>
                     </Grid>
                 </ListViewItem>
