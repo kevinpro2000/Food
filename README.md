@@ -2,4 +2,4 @@
 toàn đồ ăn
 # note
 có buồn buồn chỉnh gì thì note lại nhớ
-Oke =D
+\nOke =D
