@@ -1,0 +1,19 @@
+﻿<Window x:Class="FoodRecipe.SplashWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoodRecipe"
+        mc:Ignorable="d"
+        Title="SplashWindow" Height="450" Width="650" Loaded="Window_Load">
+    <Canvas>
+        <RadioButton Content="Never show this dialog again!"
+                     Click="turnOffButton_Click" 
+                     Canvas.Left="232" Canvas.Top="310" Height="40"
+                     />
+        <Button Content="Close"
+                Click="closeButton_Click"
+                Canvas.Left="260" Canvas.Top="350" Height="40" Width="111"
+                />
+    </Canvas>
+</Window>
