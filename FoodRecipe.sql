@@ -64,6 +64,3 @@ Sau 3 phút đun sôi xốt tương xay, bạn cho nửa muỗng bột năng và
 
 insert into Step(id, stt, stepGuild) values (1, 1, N'Bắc chảo lên bếp, phi tỏi băm cho thật thơm thì đổ cơm vào ( cơm nấu chín, để nguội, để vào ngăn mát tủ lạnh cho hạt cơm khô và tơi ). Để lửa lớn đến khi hạt cơm giòn và tơi thì đổ các nguyên liệu đã chuẩn bị vào, đảo đều 1 lần nữa.')
 insert into Step(id, stt, stepGuild) values (1, 2, N'Bạn hòa 1 muỗng cà phê nước mắm, 1 muỗng cà phê hạt nêm, 1/2 muỗng cà phê bột ngọt, 1/2 hạt tiêu, 1/2 muỗng cà phê đường trong 1 chén nhỏ. Sau đó rưới đều lên chảo cơm chiên, đảo đều rồi nêm lại cho vừa khẩu vị của gia đình. Bạn bắc chảo cơm xuống, trộn thêm hành phi và hành lá cắt nhỏ vào. Dọn cơm ra dĩa, xếp tôm tươi và mực tươi lên trên trang trí. Bạn có thể dùng cơm chung với dưa leo cắt lát mỏng và nước tương sẽ rất ngon. Sự kết hợp hài hòa giữa các loại rau củ và thịt, trứng cùng với cơm mang đến cho bạn món cơm chiên Dương Châu hấp dẫn từ màu sắc đến hương vị.')
-
-drop table Step
-drop table Recipe
