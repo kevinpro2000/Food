@@ -40,5 +40,5 @@ Nguyễn Đình Khôi	18120042	ngdkhoi27600@gmail.com		100%
 	+ Đồ án làm theo mô hình MVVM (Model - View - View Model)
 	+ Dữ liệu được lưu trên SQL Server
 
-- Link video demo: 
+- Link video demo: https://youtu.be/vLwTOTOGWy8
 	
